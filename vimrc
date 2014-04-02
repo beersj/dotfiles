@@ -31,6 +31,7 @@ filetype plugin indent on
 augroup vimrcEx
   autocmd!
 
+
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
 
@@ -78,7 +79,7 @@ if executable('ag')
 endif
 
 " Color scheme
-colorscheme github
+colorscheme Tomorrow-Night
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -136,6 +137,8 @@ nnoremap <C-l> <C-w>l
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
+let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "!bundle exec spring rspec {spec}"
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

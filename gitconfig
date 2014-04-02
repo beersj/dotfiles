@@ -17,9 +17,12 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-[merge]
-  ff = only
 [include]
   path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
+[gitsh]
+	defaultCommand = status -s
+[user]
+	name = Andy Brown
+	email = asbrown002@gmail.com
