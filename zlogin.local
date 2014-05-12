@@ -30,7 +30,7 @@ rvm_ruby_version() {
 git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   if [[ -n $ref ]]; then
-    echo "[%{$fg_bold[magenta]%}${ref#refs/heads/}%{$reset_color%} $(parse_git_dirty)]"
+    echo " [%{$fg_bold[magenta]%}${ref#refs/heads/}%{$reset_color%} $(parse_git_dirty)]"
   fi
 }
 
@@ -45,4 +45,4 @@ export CLICOLOR=1
 setopt promptsubst
 
 # prompt
-export PS1='$(rvm_ruby_version) [%{$fg_bold[blue]%}%~%{$reset_color%}] $(git_prompt_info) '
+export PS1='$(rvm_ruby_version) [%{$fg_bold[blue]%}%~%{$reset_color%}]$(git_prompt_info) '

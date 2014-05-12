@@ -61,7 +61,7 @@ bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
 # use vim as the visual editor
-export VISUAL='subl -w'
+export VISUAL='subl'
 export EDITOR=$VISUAL
 
 # load rbenv if available
@@ -73,7 +73,7 @@ fi
 export PATH="$HOME/.bin:$PATH"
 
 # mkdir .git/safe in the root of repositories you trust
-export PATH="$HOME/.rvm/bin:$PATH:$HOME/.bin"
+export PATH="$HOME/.rvm/bin:/usr/local/sbin:$PATH:$HOME/.bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # aliases

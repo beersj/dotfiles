@@ -4,3 +4,4 @@ install postgres
 install elasticsearch
 install redis
 install imagemagick
+install mysql
