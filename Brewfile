@@ -5,3 +5,4 @@ install elasticsearch
 install redis
 install imagemagick
 install mysql
+install node
