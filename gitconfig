@@ -15,7 +15,7 @@
   st = status
   up = !git fetch origin && git rebase origin/master
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/andybrown/.gitignore
   autocrlf = input
 	editor = subl -w
 [include]

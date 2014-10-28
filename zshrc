@@ -14,6 +14,7 @@ fpath=(~/.zsh/completion $fpath)
 # completion
 autoload -U compinit
 compinit
+zstyle ':completion:*' menu select=2
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
@@ -73,7 +74,9 @@ fi
 export PATH="$HOME/.bin:$PATH"
 
 # mkdir .git/safe in the root of repositories you trust
-export PATH="$HOME/.rvm/bin:/usr/local/sbin:$PATH:$HOME/.bin"
+export GOROOT=/usr/local/Cellar/go/1.3.3/libexec
+export GOPATH=/usr/local/Cellar/go/1.3.3
+export PATH="$HOME/.rvm/bin:/usr/local/sbin:$PATH:$HOME/.bin:$GOPATH/bin:$HOME/src/go_appengine"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # aliases
